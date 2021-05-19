@@ -13,6 +13,7 @@ def quantise_series(series, res):
 	Returns:
 		Numpy array of a discrete quantised version of the series
 	"""  
+	series = np.array(series)
 	return np.floor(series*res)/res
 
 def quantise_series_around_zero(series, res):
@@ -24,6 +25,7 @@ def quantise_series_around_zero(series, res):
         Returns:
                 Numpy array of a discrete quantised version of the series
         """
+	series = np.array(series)
 	return np.rint(series*res)/res 
 
 def quantise_series_normal_quantiles(series, num_quantiles):
@@ -35,6 +37,7 @@ def quantise_series_normal_quantiles(series, num_quantiles):
         Returns:
                 Numpy array of a discrete quantised version of the series
         """
+	series = np.array(series)
 	bins = np.array([np.sqrt(2) * erfinv(2 * (i/num_quantiles) - 1) for i in range(num_quantiles+1)])
 	return np.digitize(series, bins)	
 		
