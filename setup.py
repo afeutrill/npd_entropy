@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='NPD-Entropy',
+    name='npd_entropy',
     url='https://github.com/afeutrill/NPD-Entropy',
     author='Andrew Feutrill',
     author_email='andrew.feutrill@adelaide.edu.ua',
