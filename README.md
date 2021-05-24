@@ -1,10 +1,10 @@
-# NPD-Entropy
+# npd_entropy
 
 An implementation of a non-parametric differential entropy rate estimator, developed by Andrew Feutrill and Matthew Roughan. This technique quantises data from a continuous-valued process, then utilises Shannon entropy rate estimators for a differential entropy rate estimate.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install NPD-Entropy.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install npd_entropy.
 
 ```bash
 pip install npd_entropy
