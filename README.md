@@ -22,5 +22,11 @@ npd_entropy.grassberger_estimate(quantised_series, 100) # returns the differenti
 ## Contributors
 * Andrew Feutrill
 
+## References
+
+[Feutrill, A., & Roughan, M. (2021). NPD Entropy: A Non-Parametric Differential Entropy Rate Estimator. arXiv preprint arXiv:2105.11580.](https://arxiv.org/abs/2105.11580)
+
+Please cite this paper if you use this estimator.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

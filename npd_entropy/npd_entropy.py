@@ -61,8 +61,6 @@ def grassberger_estimate(series, n):
 				# Comparing the series to back in time only
 				if np.all(series[n+i:n+i+num] == series[n+i-j-num:n+i-j]):
 					break
-				# Just testing changing this to num -1, as it think it's the same as the NN estimator in this case
-				# CHanged to L_num = num 3/8/20
 				# If the end of the loop with no matches, then set L_num to the previous length
 				if j == n - num:
 					L_num = num - 1
