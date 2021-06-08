@@ -7,7 +7,7 @@ setup(
     author_email='andrew.feutrill@adelaide.edu.ua',
     packages=['npd_entropy'],
     install_requires=['numpy', 'numba', 'scipy'],
-    version='0.1',
+    version='0.2',
     license='MIT',
     description='A Non-Parametric Differential Entropy Rate estimator',
 )

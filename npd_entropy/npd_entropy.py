@@ -72,3 +72,15 @@ def grassberger_estimate(series, n):
 	H_est = 1/reciprocal
 	return H_est
 
+def npd_entropy(H_est, res):
+	"""
+	Generic implementation of NPD Entropy, which calculates a differential entropy rate estimate, h_est, given a Shannon entropy rate estimate, H_est.
+	Parameters:
+		H_est - float: Shannon entropy rate estimate, from any technique
+		res - float: the resolution of the quantisation
+	Returns:
+		Differential entropy rate estimate of a quantised estimate
+	"""
+	return H_est + np.log(1/res)
+
+

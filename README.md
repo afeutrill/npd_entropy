@@ -16,7 +16,8 @@ pip install npd_entropy
 import npd_entropy
 
 quantised_series = npd_entropy.quantise_series(series, 1) # returns a quantised version of the series, with bin size of 1
-npd_entropy.grassberger_estimate(quantised_series, 100) # returns the differential entropy rte estimate, with a history of 100 data points
+shannon_entropy_rate_estimate = npd_entropy.grassberger_estimate(quantised_series, 100) # returns the shannon entropy rate estimate, with a history of 100 data points
+npd_entropy.npd_entropy(shannon_entropy_rate_estimate, 1) #returns the differential entropy rate estimate
 ```
 
 ## Contributors
